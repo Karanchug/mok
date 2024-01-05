@@ -1,3 +1,7 @@
+ARG FUNCTION_DIR="home/app/"
+
+FROM python:slim-buster
+
 ARG FUNCTION_DIR
 RUN mkdir -p ${FUNCTION_DIR}
 COPY *.py ${FUNCTION_DIR}
